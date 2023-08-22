@@ -84,7 +84,7 @@ const Sidebar = () => {
 						}
 					>
 						<BiTimeFive className='w-5 h-5 text-white' />
-						<p className={`${styles.paragrafhWhite}`}>Jadvallar</p>
+						<p className={`${styles.paragrafhWhite}`}>Ish vaqti</p>
 					</NavLink>
 				</li>
 				<li>

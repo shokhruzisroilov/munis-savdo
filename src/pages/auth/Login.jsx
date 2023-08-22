@@ -2,7 +2,7 @@ import { logo, logoFroma } from '../../assets'
 import { styles } from '../../utils/styles'
 import { Button } from '../../components/ui'
 
-const Login = () => {	
+const Login = () => {
 	return (
 		<div className='w-full min-h-screen flex items-center justify-between'>
 			<div className='w-1/2 bg-primary min-h-screen sm:flex hidden justify-center items-center'>
@@ -16,7 +16,10 @@ const Login = () => {
 				<div className='mt-10 sm:mx-auto sm:w-full sm:max-w-sm'>
 					<form className='space-y-6'>
 						<div>
-							<label htmlFor='text' className={`${styles.paragrafh} block text-gray-900`}>
+							<label
+								htmlFor='text'
+								className={`${styles.paragrafh} block text-gray-900`}
+							>
 								Ism
 							</label>
 							<div className='mt-2'>
@@ -31,7 +34,10 @@ const Login = () => {
 							</div>
 						</div>
 						<div>
-							<label htmlFor='password' className={`${styles.paragrafh} block text-gray-900`}>
+							<label
+								htmlFor='password'
+								className={`${styles.paragrafh} block text-gray-900`}
+							>
 								Parol
 							</label>
 							<div className='mt-2'>
@@ -46,7 +52,7 @@ const Login = () => {
 							</div>
 						</div>
 						<div>
-							<Button name={'Davom eting'}/>
+							<Button name={'Davom eting'} />
 						</div>
 					</form>
 				</div>

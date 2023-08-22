@@ -1,5 +1,6 @@
 import { styles } from '../utils/styles'
-import { ListHeader, ListMain } from '../components'
+import { ListMain, ViewNumber, Search } from '../components'
+import { FooterBy } from '../components/ui'
 import {
 	AiFillDelete,
 	AiOutlinePlus,
@@ -38,29 +39,9 @@ const Devices = () => {
 			</div>
 			<div className='w-full border border-gray-500 rounded-lg mt-5 py-10 px-5'>
 				<div className='flex justify-between'>
-					<div>
-						<label htmlFor='text'>Ko'rsatish </label>
-						<select
-							id='number'
-							name='number'
-							className=' rounded-md py-2 pl-2 pr-7 border border-gray-500 text-gray-900 '
-						>
-							<option>100</option>
-							<option>200</option>
-							<option>300</option>
-						</select>
-						<label htmlFor='text'> yozuvlar </label>
-					</div>
+					<ViewNumber />
 					<div className='flex gap-5 items-center'>
-						<input
-							id='text'
-							name='text'
-							type='text'
-							autoComplete='text'
-							required
-							className='block w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-500 placeholder:text-gray-500 '
-							placeholder='Qidirish ?'
-						/>
+						<Search />
 						<select
 							id='number'
 							name='number'
@@ -72,14 +53,55 @@ const Devices = () => {
 						</select>
 					</div>
 				</div>
-				<ListHeader />
-				<ListMain />
-				<ListMain />
-				<ListMain />
-				<ListMain />
-				<ListMain />
+				<div className='flex flex-col overflow-x-auto mt-2'>
+					<div className='sm:-mx-6 lg:-mx-8'>
+						<div className='inline-block min-w-full py-2 sm:px-6 lg:px-8'>
+							<div className='overflow-x-auto'>
+								<table className='min-w-full text-left text-sm font-light'>
+									<thead className='border-b font-medium dark:border-neutral-500'>
+										<tr>
+											<th scope='col' className='px-6 py-4 flex gap-4'>
+												<input type='checkbox' />
+												<p>N</p>
+											</th>
+											<th scope='col' className='px-6 py-4'>
+												Ismi
+											</th>
+											<th scope='col' className='px-6 py-4'>
+												Ip
+											</th>
+											<th scope='col' className='px-6 py-4'>
+												Port
+											</th>
+											<th scope='col' className='px-6 py-4'>
+												Huquq
+											</th>
+											<th scope='col' className='px-6 py-4'>
+												Parol
+											</th>
+											<th scope='col' className='px-6 py-4'>
+												Turi
+											</th>
+											<th scope='col' className='px-6 py-4'>
+												Holati
+											</th>
+											<th scope='col' className='px-6 py-4'></th>
+										</tr>
+									</thead>
+									<tbody>
+										<ListMain />
+										<ListMain />
+										<ListMain />
+										<ListMain />
+										<ListMain />
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
-			<p className={`text-center mt-10 ${styles.paragrafh2x}`}>@2023 MUNS SAVDO by Muns</p>
+			<FooterBy />
 		</div>
 	)
 }
