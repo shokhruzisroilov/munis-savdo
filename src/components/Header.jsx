@@ -4,9 +4,9 @@ import { FiUser } from 'react-icons/fi'
 import { IoMdArrowDropdown } from 'react-icons/io'
 const Header = () => {
 	return (
-		<div className='h-[100px] bg-white shadow-headerShadow flex items-center justify-between px-16'>
+		<div className='h-[100px] bg-white shadow-headerShadow flex items-center justify-between px-5'>
 			<div>
-				<img src={logo} alt='logo' className='w-24 h-24 cursor-pointer' />
+				<img src={logo} alt='logo' className='w-48 h-48 cursor-pointer' />
 			</div>
 			<div className='flex gap-4'>
 				<Button name={'chiqish'}/>
