@@ -11,6 +11,8 @@ import {
 	Weekend,
 	ErrorPage,
 	AddDevices,
+	AddEmployess,
+	RoleUsers,
 } from './pages/index'
 import { Layout } from './layout/index'
 
@@ -21,10 +23,12 @@ const App = () => {
 				<Route index element={<Devices />} />
 				<Route path='/add-devices' element={<AddDevices />} />
 				<Route path='/categories' element={<Categories />} />
-				<Route path='/employees' element={<Employees />} />	
+				<Route path='/employees' element={<Employees />} />
+				<Route path='/employees/add-employees' element={<AddEmployess />} />
 				<Route path='/groups' element={<Groups />} />
 				<Route path='/synchronization' element={<Synchronization />} />
 				<Route path='/users' element={<Users />} />
+				<Route path='/users/role-users' element={<RoleUsers />} />
 				<Route path='/tables' element={<Tables />} />
 				<Route path='/weekend' element={<Weekend />} />
 			</Route>

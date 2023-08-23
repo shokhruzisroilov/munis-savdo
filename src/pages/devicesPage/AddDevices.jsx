@@ -13,13 +13,13 @@ const AddDevices = () => {
 				<h1 className={`${styles.heading2x} mr-5`}>Qurulma qo'shing</h1>
 			</div>
 			<form className='w-full border border-gray-500 rounded-lg mt-5 py-10 px-5 grid grid-cols-2 gap-5'>
-				<Input type={'text'} title={'Ism'}/>
-				<Input type={'text'} title={'Ip'}/>
-				<Input type={'text'} title={'Port'}/>
-				<Input type={'text'} title={'foydalanuvchi'}/>
-				<Input type={'password'} title={'Parol'}/>
-				<Filter />
-				<Filter /> <br />
+				<Input type={'text'} title={'Ism'} />
+				<Input type={'text'} title={'Ip'} />
+				<Input type={'text'} title={'Port'} />
+				<Input type={'text'} title={'foydalanuvchi'} />
+				<Input type={'password'} title={'Parol'} />
+				<Filter title={'Turi'} />
+				<Filter title={'Turi'} /> <br />
 				<div className='flex mt-5 gap-x-5'>
 					<button
 						type='submit'

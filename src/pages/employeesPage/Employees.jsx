@@ -3,6 +3,7 @@ import { ViewNumber, Search, EmployeList } from '../../components'
 import { FooterBy } from '../../components/ui'
 import { AiOutlinePlus, AiFillDelete } from 'react-icons/ai'
 import { MdCategory } from 'react-icons/md'
+import { Link } from 'react-router-dom'
 const Employees = () => {
 	return (
 		<div className='w-full'>
@@ -11,10 +12,13 @@ const Employees = () => {
 					<h1 className={`${styles.heading2x} mr-5`}>Xodimlar</h1>
 				</div>
 				<div className='flex gap-x-5'>
-					<span className='flex items-center gap-1 text-green-600 cursor-pointer'>
+					<Link
+						to='/employees/add-employees'
+						className='flex items-center gap-1 text-green-600 cursor-pointer'
+					>
 						<AiOutlinePlus className='text-[20px]' />
 						<p className={`${styles.paragrafh2x}`}>Xodim qo'shish</p>
-					</span>
+					</Link>
 					<span className='flex items-center gap-1 text-red-600 cursor-pointer'>
 						<AiFillDelete className='text-[20px]' />
 						<p className={`${styles.paragrafh2x}`}>Xodimni o'chirish</p>

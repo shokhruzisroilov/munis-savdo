@@ -5,7 +5,8 @@ export default {
 		extend: {
 			colors: {
 				primary: '#5F4DEE',
-				primaryBlue: '#4338CA'
+				primaryBlue: '#4338CA',
+				lightWithe: '#e5e5e5',
 			},
 			fontFamily: {},
 			boxShadow: {

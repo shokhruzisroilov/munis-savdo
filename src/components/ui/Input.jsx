@@ -1,5 +1,5 @@
-import { styles } from "../../utils/styles"
-const Input = ({title, type='text'}) => {
+import { styles } from '../../utils/styles'
+const Input = ({ title, type = 'text' }) => {
 	return (
 		<div>
 			<label
@@ -8,7 +8,7 @@ const Input = ({title, type='text'}) => {
 			>
 				{title}
 			</label>
-			<div className='mt-2'>
+			<div >
 				<input
 					id={type}
 					name={type}
