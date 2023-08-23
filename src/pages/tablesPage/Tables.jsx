@@ -1,5 +1,5 @@
-import { styles } from '../utils/styles'
-import { FooterBy } from '../components/ui'
+import { styles } from '../../utils/styles'
+import { FooterBy } from '../../components/ui'
 
 const Tables = () => {
 	return (

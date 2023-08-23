@@ -11,7 +11,6 @@ const ViewNumber = () => {
 				<option>200</option>
 				<option>300</option>
 			</select>
-			<label htmlFor='text'> yozuvlar </label>
 		</div>
 	)
 }

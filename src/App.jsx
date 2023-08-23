@@ -10,6 +10,7 @@ import {
 	Users,
 	Weekend,
 	ErrorPage,
+	AddDevices,
 } from './pages/index'
 import { Layout } from './layout/index'
 
@@ -18,8 +19,9 @@ const App = () => {
 		<Routes>
 			<Route path='/' element={<Layout />}>
 				<Route index element={<Devices />} />
+				<Route path='/add-devices' element={<AddDevices />} />
 				<Route path='/categories' element={<Categories />} />
-				<Route path='/employees' element={<Employees />} />
+				<Route path='/employees' element={<Employees />} />	
 				<Route path='/groups' element={<Groups />} />
 				<Route path='/synchronization' element={<Synchronization />} />
 				<Route path='/users' element={<Users />} />

@@ -1,7 +1,7 @@
-import { styles } from '../utils/styles'
-import { Button } from '../components/ui'
-import { ViewNumber, Search, SynxronList, SynxronIdList } from '../components'
-import { FooterBy } from '../components/ui'
+import { styles } from '../../utils/styles'
+import { Button } from '../../components/ui'
+import { ViewNumber, Search, SynxronList, SynxronIdList } from '../../components'
+import { FooterBy } from '../../components/ui'
 
 const Synchronization = () => {
 	return (

@@ -1,27 +1,22 @@
-import { styles } from '../utils/styles'
-import { ViewNumber, Search, EmployeList } from '../components'
-import { FooterBy } from '../components/ui'
+import { styles } from '../../utils/styles'
+import { ViewNumber, Search, UsersList } from '../../components'
+import { FooterBy } from '../../components/ui'
 import { AiOutlinePlus, AiFillDelete } from 'react-icons/ai'
-import { MdCategory } from 'react-icons/md'
-const Employees = () => {
+function Users() {
 	return (
 		<div className='w-full'>
 			<div className='flex justify-between'>
 				<div>
-					<h1 className={`${styles.heading2x} mr-5`}>Xodimlar</h1>
+					<h1 className={`${styles.heading2x} mr-5`}>Foydalanuvchilar</h1>
 				</div>
 				<div className='flex gap-x-5'>
 					<span className='flex items-center gap-1 text-green-600 cursor-pointer'>
 						<AiOutlinePlus className='text-[20px]' />
-						<p className={`${styles.paragrafh2x}`}>Xodim qo'shish</p>
+						<p className={`${styles.paragrafh2x}`}>Foydalanuvchi qo'shish</p>
 					</span>
 					<span className='flex items-center gap-1 text-red-600 cursor-pointer'>
 						<AiFillDelete className='text-[20px]' />
-						<p className={`${styles.paragrafh2x}`}>Xodimni o'chirish</p>
-					</span>
-					<span className='flex items-center gap-1 text-primary cursor-pointer'>
-						<MdCategory className='text-[20px]' />
-						<p className={`${styles.paragrafh2x}`}>Guruhini o'zgartirish</p>
+						<p className={`${styles.paragrafh2x}`}>Foydalanuvchini o'chirish</p>
 					</span>
 				</div>
 			</div>
@@ -53,31 +48,37 @@ const Employees = () => {
 												<p>N</p>
 											</th>
 											<th scope='col' className='px-6 py-4'>
-												Ism
+												Ismi
 											</th>
 											<th scope='col' className='px-6 py-4'>
-												Karta
+												Qurulmalar
 											</th>
 											<th scope='col' className='px-6 py-4'>
-												Barmoq izi
+												Toifalar
 											</th>
 											<th scope='col' className='px-6 py-4'>
-												Yuz
+												Xodimlar
 											</th>
 											<th scope='col' className='px-6 py-4'>
-												Ishlagan vaqti
+												Grupalar
 											</th>
 											<th scope='col' className='px-6 py-4'>
-												Shartnoma
+												Sinxronizatsiya
+											</th>
+											<th scope='col' className='px-6 py-4'>
+												Foydalanuvilar
+											</th>
+											<th scope='col' className='px-6 py-4'>
+												jadvallar
+											</th>
+											<th scope='col' className='px-6 py-4'>
+												Bayramlar
 											</th>
 										</tr>
 									</thead>
 									<tbody>
-										<EmployeList />
-										<EmployeList />
-										<EmployeList />
-										<EmployeList />
-										<EmployeList />
+										<UsersList />
+										<UsersList />
 									</tbody>
 								</table>
 							</div>
@@ -90,4 +91,4 @@ const Employees = () => {
 	)
 }
 
-export default Employees
+export default Users

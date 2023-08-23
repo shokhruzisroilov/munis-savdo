@@ -1,6 +1,7 @@
-import { styles } from '../utils/styles'
-import { ListMain, ViewNumber, Search } from '../components'
-import { FooterBy } from '../components/ui'
+import { styles } from '../../utils/styles'
+import { ListMain, ViewNumber, Search } from '../../components'
+import { FooterBy } from '../../components/ui'
+import { Link } from 'react-router-dom'
 import {
 	AiFillDelete,
 	AiOutlinePlus,
@@ -12,30 +13,34 @@ import { BsFillDoorOpenFill } from 'react-icons/bs'
 const Devices = () => {
 	return (
 		<div className='w-full'>
-			<div className='flex items-center gap-5'>
+			<div className='flex justify-between'>
 				<div>
-					<h1 className={`${styles.heading2x} mr-5`}>Qurilmalar</h1>
+					<h1 className={`${styles.heading2x} mr-5`}>Qurulmalar</h1>
 				</div>
-				<span className='flex items-center gap-1 text-green-600 cursor-pointer'>
-					<AiOutlinePlus className='text-[20px]' />
-					<p className={`${styles.paragrafh2x}`}>Qurulma qo'shish</p>
-				</span>
-				<span className='flex items-center gap-1 text-red-600 cursor-pointer'>
-					<AiFillDelete className='text-[20px]' />
-					<p className={`${styles.paragrafh2x}`}>Qurilmani o'chirish</p>
-				</span>
-				<span className='flex items-center gap-1 text-primary cursor-pointer'>
-					<MdCategory className='text-[20px]' />
-					<p className={`${styles.paragrafh2x}`}>Toifani o'zgartirish</p>
-				</span>
-				<span className='flex items-center gap-1 text-green-500 cursor-pointer'>
-					<AiTwotoneCloseCircle className='text-[20px]' />
-					<p className={`${styles.paragrafh2x}`}>Hammasini o'chirib qo'yish</p>
-				</span>
-				<span className='flex items-center gap-1 text-gray-500 cursor-pointer'>
-					<BsFillDoorOpenFill className='text-[20px]' />
-					<p className={`${styles.paragrafh2x}`}>Hammasini ochish</p>
-				</span>
+				<div className='flex gap-x-5'>
+						<Link to='/add-devices' className='flex items-center gap-1 text-green-600 cursor-pointer'>
+							<AiOutlinePlus className='text-[20px]' />
+							<p className={`${styles.paragrafh2x}`}>Qurulma qo'shish</p>
+						</Link>
+					<span className='flex items-center gap-1 text-red-600 cursor-pointer'>
+						<AiFillDelete className='text-[20px]' />
+						<p className={`${styles.paragrafh2x}`}>Qurilmani o'chirish</p>
+					</span>
+					<span className='flex items-center gap-1 text-primary cursor-pointer'>
+						<MdCategory className='text-[20px]' />
+						<p className={`${styles.paragrafh2x}`}>Toifani o'zgartirish</p>
+					</span>
+					<span className='flex items-center gap-1 text-green-500 cursor-pointer'>
+						<AiTwotoneCloseCircle className='text-[20px]' />
+						<p className={`${styles.paragrafh2x}`}>
+							Hammasini o'chirib qo'yish
+						</p>
+					</span>
+					<span className='flex items-center gap-1 text-gray-500 cursor-pointer'>
+						<BsFillDoorOpenFill className='text-[20px]' />
+						<p className={`${styles.paragrafh2x}`}>Hammasini ochish</p>
+					</span>
+				</div>
 			</div>
 			<div className='w-full border border-gray-500 rounded-lg mt-5 py-10 px-5'>
 				<div className='flex justify-between'>

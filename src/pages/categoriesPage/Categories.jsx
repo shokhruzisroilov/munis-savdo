@@ -1,13 +1,13 @@
-import { styles } from '../utils/styles'
-import { ViewNumber, Search } from '../components'
-import { FooterBy } from '../components/ui'
+import { styles } from '../../utils/styles'
+import { ViewNumber, Search } from '../../components'
+import { FooterBy } from '../../components/ui'
 import { AiOutlinePlus, AiFillDelete } from 'react-icons/ai'
-function Weekend() {
+const Categories = () => {
 	return (
-		<div className='w-full'>
+		<div className='w-full'>	
 			<div className='flex justify-between'>
 				<div>
-					<h1 className={`${styles.heading2x} mr-5`}>Bayramlar</h1>
+					<h1 className={`${styles.heading2x} mr-5`}>Toifalar</h1>
 				</div>
 				<div className='flex gap-x-5'>
 					<span className='flex items-center gap-1 text-green-600 cursor-pointer'>
@@ -37,13 +37,7 @@ function Weekend() {
 												<p>N</p>
 											</th>
 											<th scope='col' className='px-6 py-4'>
-												Bayram
-											</th>
-											<th scope='col' className='px-6 py-4'>
-												Kun
-											</th>
-											<th scope='col' className='px-6 py-4'>
-												Oy
+												Holati
 											</th>
 										</tr>
 									</thead>
@@ -53,9 +47,14 @@ function Weekend() {
 												<input type='checkbox' />
 												<p>1</p>
 											</td>
-											<td className='whitespace-nowrap px-6 py-4'>Navro'z</td>
-											<td className='whitespace-nowrap px-6 py-4'>21</td>
-											<td className='whitespace-nowrap px-6 py-4'>Mart</td>
+											<td className='whitespace-nowrap px-6 py-4'>Kirish</td>
+										</tr>
+										<tr className='border-b dark:border-neutral-500'>
+											<td className='whitespace-nowrap px-6 py-4 font-medium flex gap-x-4'>
+												<input type='checkbox' />
+												<p>1</p>
+											</td>
+											<td className='whitespace-nowrap px-6 py-4'>Chiqish</td>
 										</tr>
 									</tbody>
 								</table>
@@ -69,4 +68,4 @@ function Weekend() {
 	)
 }
 
-export default Weekend
+export default Categories

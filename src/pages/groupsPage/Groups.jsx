@@ -1,6 +1,6 @@
-import { styles } from '../utils/styles'
-import { ViewNumber, Search } from '../components'
-import { FooterBy } from '../components/ui'
+import { styles } from '../../utils/styles'
+import { ViewNumber, Search } from '../../components'
+import { FooterBy } from '../../components/ui'
 import { AiOutlinePlus, AiFillDelete } from 'react-icons/ai'
 const Groups = () => {
 	return (
